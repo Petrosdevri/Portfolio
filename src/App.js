@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { React, lazy } from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+const About = lazy(() => import('./components/About/About'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
+const Home = lazy(() => import('./components/Home/Home'));
+const Projects = lazy(() => import('./components/Projects/Projects'));
+const TechStack = lazy(() => import('./components/About/CompleteTechStack'));
+const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/techstack' element={<TechStack />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

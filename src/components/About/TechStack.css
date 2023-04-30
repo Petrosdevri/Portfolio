@@ -1,0 +1,35 @@
+.sq-stack:first-child:hover {
+    background: linear-gradient(100deg, #E34F26, #C43C1F, #A52A19, #71240F);
+}
+
+.sq-stack:nth-child(2):hover {
+    background: linear-gradient(90deg, #1572B6, #1365A0, #105789, #0D4872);
+}
+
+.sq-stack:nth-child(3):hover {
+    background: linear-gradient(90deg, #F7DF1E, #DDC508, #AC9906, #7B6D04 );
+}
+
+.sq-stack:nth-child(4):hover {
+    background: linear-gradient(90deg, #3178C6, #2E70B8, #24578F, #193E66);
+}
+
+.sq-stack2:first-child:hover {
+    background: linear-gradient(90deg, #61DAFB, #38D0FA, #06C4F9, #059DC7);
+}
+
+.sq-stack2:nth-child(2):hover {
+    background: linear-gradient(90deg, #7952B3, #6A46A0, #52367C, #3B2759);
+}
+
+.sq-stack2:nth-child(3):hover {
+    background: linear-gradient(90deg, #CC6699, #BF4080, #993366, #862D59);
+}
+
+.sq-stack2:nth-child(4):hover {
+    background: linear-gradient(90deg, #F24E1E, #D93C0D, #A92F0A, #782107);
+}
+
+.sq-stack2:nth-child(5):hover {
+    background: linear-gradient(90deg, #F05032, #ED3312, #BE290E, #8E1E0B);
+}

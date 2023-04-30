@@ -1,38 +1,340 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Mukta+Vaani&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap';
+
+/* General Styles */
+* {
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+::-webkit-input-placeholder, -moz-placeholder, -ms-input-placeholder, -o-placeholder {
+  color: #CFCFCF;
+}
+
 .App {
+  background-color: #102A44;
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  color: #FFF;
+  font-family: 'Mukta Vaani';
   text-align: center;
+  animation: star-animation ease-in-out infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans';
+  text-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
+.name {
+  font-family: 'Merriweather Sans';
+  color: #0DCAF0;
+}
+
+.stack-text-margin {
+  margin-block-start: 4em;
+}
+
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes star-animation {
+  0% {
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+  50% {
+    background-position: 25px 25px, 30px 100px, 360px 30px, 130px 160px;
+  }
+  100% {
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+}
+
+/* Header Styles */
+header {
+  background: #1F2933;
+  height: 4.39em;
+  box-shadow: 0.31em 0 0.62em rgba(0, 0, 0, .5);
+  position: sticky;
+}
+
+#nav {
+  gap: 1.5em;
+  font-family: 'Source Code Pro';
+  margin-inline-start: 25%;
+}
+
+.nav-links {
+  color: #FFF !important;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.nav-links:hover, .nav-links:active, .nav-links:focus, .nav-links:after {
+  color: #0DCAF0 !important;
+}
+
+/* Footer Styles */
+.footer {
+  background: #1F2933;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.13em;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .5);
+}
+
+#social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-btn {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #FFF;
+  border-radius: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.footer-btn:hover {
+  background: #FFF;
+}
+
+/* Home */
+.hero, .introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin: 100px 70px;
+  text-align: left;
+}
+
+.introduction {
+  margin-block-start: 250px;
+}
+
+.presentation-btn {
+  width: 120px;
+  height: 40px;
+}
+
+.presentation-btn > a {
+  text-decoration: none;
+}
+
+/* About */
+#about-photo {
+  border-radius: 50%;
+  box-shadow: 0 0 2.5px rgba(16, 42, 67, .5);
+  margin-inline-end: 65px;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  margin: 100px 120px 0 50px;
+  text-align: left;
+}
+
+.hobby-list > li {
+  margin-block-end: 10px;
+}
+
+.tech-stack1 {
+  margin: 0 2em;
+  align-items: center;
+}
+
+.sq-stack {
+  width: 250px;
+  height: 250px;
+  background: #616E7C;
+  border-radius: 10px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sq-stack:hover {
+  animation: scale 1s ease-in-out;
+  border: 2px solid #FFF;
+  box-shadow: 0 0 55px 15px rgba(16, 42, 67, .5);
+  cursor: pointer;
+}
+
+.stack-btn {
+  width: 200px;
+}
+
+.tech-stack2 {
+  margin: 5em 0;
+}
+
+.stack {
+  width: 95%;
+  height: 90px;
+  margin: 0 auto;
+  background: #616E7C;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(16, 42, 67, .5);
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.github-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 50px 0;
+}
+
+.github-calendar:hover {
+  cursor: pointer;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0 50px 0;
+}
+
+.card-btn {
+  width: 100px;
+  height: 30px;
+  background: #616E7C !important;
+  border: none !important;
+  border-radius: 2px;
+}
+
+.card-btn:hover {
+  background: #555 !important;
+}
+
+.card-btn > a {
+  color: #FFF !important;
+  margin-block-end: 5px !important;
+  text-decoration: none;
+}
+
+.card-icon {
+  margin-block-end: 8px;
+}
+
+/* Contact */
+.contact {
+  height: 80vh;
+  margin: 50px 0 50px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.field {
+  background: none;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  color: #FFF;
+  width: 300px;
+}
+
+.error-message {
+  color: #FF0000;
+  margin-block-start: -10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .App {
+    animation: none;
+  }
+
+  .hero, .introduction {
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
+
+  .about-me {
+    flex-direction: column;
+    margin: 50px 0 0 0;
+  }
+
+  #about-photo {
+    margin-inline-end: 0;
+  }
+
+  .stack2 {
+    width: 100%;
+  }
+
+  .projects {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-btn {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .field {
+    width: 100%;
   }
 }
