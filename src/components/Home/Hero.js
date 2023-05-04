@@ -16,8 +16,8 @@ export default function Hero() {
                 <h2>Front End Developer</h2>
                 <h5 className='stack-text-margin'>Hi, I&apos;m Petros Devrikis, a Front End Developer from Greece.</h5>
                 <Stack className='presentation-btns' direction='horizontal' gap={3} style={{ marginBlockStart: '25px' }}>
-                    <Button className='presentation-btn btn-info'><a href='/about'>More On Me</a></Button>
-                    <Button className='presentation-btn btn-outline-info'><a href='/projects'>My Projects</a></Button>
+                    <Button className='presentation-btn' variant='info'><a href='/about'>More On Me</a></Button>
+                    <Button className='presentation-btn' variant='info'><a href='/projects'>My Projects</a></Button>
                 </Stack>
             </Stack>
             <img src={JSDev} alt='JS Developer' id='intro-img' rel='preload' width='375' height='250' />
