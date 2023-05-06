@@ -9,9 +9,9 @@ export default function AboutMe() {
             <Stack className='about-me' gap={2}>
                 <h1>About <span className='name'>Me</span></h1>
                 <h4>I am Petros Devrikis, a Front End Developer living in Thessaloniki, Greece.</h4>
-                <p>I have a passion for developing interactive, practical and responsive web applications with special attention on abundance <br /> and design.
-                    I am eager to learn constantly and hone my stack skills.</p>
-                <p>My main focus is on JavaScript and especially ES6, as well as React.</p>
+                <p>I have a passion for developing interactive, practical and responsive web applications with special attention to abundance and design.
+                    I am eager to learn constantly and committed to hone my stack skills and technical prowess.</p>
+                <p>My principal area of expertise is on JavaScript with emphasis on the ES6 standard, and I also specialise in React.</p>
                 <p>Some of my hobbies are listed below:</p>
                 <ul className='hobby-list'>
                     <li><Aperture /> Going to the gym </li>

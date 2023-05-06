@@ -20,7 +20,7 @@ export default function Hero() {
                     <Button className='presentation-btn' variant='info'><a href='/projects'>My Projects</a></Button>
                 </Stack>
             </Stack>
-            <img src={JSDev} alt='JS Developer' id='intro-img' rel='preload' width='375' height='250' />
+            <img src={JSDev} alt='JS Developer' id='intro-img' rel='preload' />
         </Stack>
     );
 }

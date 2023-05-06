@@ -45,6 +45,10 @@ li {
   list-style-type: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 .name {
   font-family: 'Merriweather Sans';
   color: #0DCAF0;
@@ -159,6 +163,11 @@ header {
 
 .presentation-btn > a {
   text-decoration: none;
+}
+
+#intro-img {
+  width: 300px;
+  height: 250px;
 }
 
 /* About */
@@ -300,9 +309,18 @@ header {
     animation: none;
   }
 
+  header {
+    background: #1F2933;
+  }
+
   .hero, .introduction {
     flex-direction: column;
     margin: 50px 0 0 0;
+  }
+
+  #intro-img {
+    width: 275px;
+    height: 220px;
   }
 
   .about-me {
