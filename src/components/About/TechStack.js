@@ -11,33 +11,33 @@ export default function TechStack() {
             <h2>Main Skills</h2>
             <Stack className='tech-stack' direction='horizontal' gap={2}>
                 <Stack className='sq-stack'>
-                    <LazyLoad once><HTML color={'#FFF'} size={115} title='' /></LazyLoad>
+                    <LazyLoad once><HTML color={'#FFF'} className='sq-stack-icon' size={115} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack'>
-                    <LazyLoad once><CSS color={'#FFF'} size={115} title='' /></LazyLoad>
+                    <LazyLoad once><CSS color={'#FFF'} className='sq-stack-icon' size={115} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack'>
-                    <LazyLoad once><JavaScript color={'#FFF'} size={115} title='' /></LazyLoad>
+                    <LazyLoad once><JavaScript color={'#FFF'} className='sq-stack-icon' size={115} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack'>
-                    <LazyLoad once><TypeScript color={'#FFF'} size={115} title='' /></LazyLoad>
+                    <LazyLoad once><TypeScript color={'#FFF'} className='sq-stack-icon' size={115} title='' /></LazyLoad>
                 </Stack>
             </Stack>
             <Stack className='tech-stack' direction='horizontal' gap={2}>
                 <Stack className='sq-stack sq-stack2'>
-                    <LazyLoad once><React1 color={'#FFF'} size={100} title='' /></LazyLoad>
+                    <LazyLoad once><React1 color={'#FFF'} className='sq-stack2-icon' size={100} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack sq-stack2'>
-                    <LazyLoad once><Bootstrap color={'#FFF'} size={100} title='' /></LazyLoad>
+                    <LazyLoad once><Bootstrap color={'#FFF'} className='sq-stack2-icon' size={100} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack sq-stack2'>
-                    <LazyLoad once><SASS color={'#FFF'} size={100} title='' /></LazyLoad>
+                    <LazyLoad once><SASS color={'#FFF'} className='sq-stack2-icon' size={100} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack sq-stack2'>
-                    <LazyLoad once><Figma color={'#FFF'} size={100} title='' /></LazyLoad>
+                    <LazyLoad once><Figma color={'#FFF'} className='sq-stack2-icon' size={100} title='' /></LazyLoad>
                 </Stack>
                 <Stack className='sq-stack sq-stack2'>
-                    <LazyLoad once><Git color={'#FFF'} size={100} title='' /></LazyLoad>
+                    <LazyLoad once><Git color={'#FFF'} className='sq-stack2-icon' size={100} title='' /></LazyLoad>
                 </Stack>
             </Stack>
             <Button className='stack-btn' href='/techstack' variant='outline-light' >Complete Tech Stack</Button>

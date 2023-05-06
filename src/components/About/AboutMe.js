@@ -5,8 +5,8 @@ import PetrosDevrikis from '../../images/photos/personal-photos/Petros Devrikis 
 
 export default function AboutMe() {
     return (
-        <Stack direction='horizontal' gap={3}>
-            <Stack className='about-me' gap={2}>
+        <Stack className='about-me' direction='horizontal' gap={3}>
+            <Stack className='about-me-info' gap={2}>
                 <h1>About <span className='name'>Me</span></h1>
                 <h4>I am Petros Devrikis, a Front End Developer living in Thessaloniki, Greece.</h4>
                 <p>I have a passion for developing interactive, practical and responsive web applications with special attention to abundance and design.

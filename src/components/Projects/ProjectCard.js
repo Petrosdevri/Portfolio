@@ -5,11 +5,11 @@ import { Sigithub as Github } from '@icons-pack/react-simple-icons';
 
 export default function ProjectCard(props) {
     return (
-        <Card style={{ background: '#9AA5B1', width: '15rem', height: '22rem' }}>
-            <Card.Img variant='top' src={props.picture} width={260} height={160} />
+        <Card className='project-card'>
+            <Card.Img variant='top' className='card-img' src={props.picture} width={260} height={160} />
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text>
+                <Card.Title className='project-title'>{props.title}</Card.Title>
+                <Card.Text className='project-description'>
                     {props.description}
                 </Card.Text>
                 <Stack direction='horizontal' gap={3}>

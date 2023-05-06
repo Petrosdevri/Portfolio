@@ -171,7 +171,7 @@ header {
   margin-inline-end: 65px;
 }
 
-.about-me {
+.about-me-info {
   display: flex;
   justify-content: space-between;
   align-items: left;
@@ -248,6 +248,12 @@ header {
   margin: 50px 0 50px 0;
 }
 
+.project-card {
+  background: #9AA5B1 !important;
+  width: 15em !important;
+  height: 22em !important;
+}
+
 .card-btn {
   width: 100px;
   height: 30px;
@@ -303,10 +309,6 @@ header {
     animation: none;
   }
 
-  /* h1, h2, h3, h4, h5, h6 {
-    font-size: 90% !important;
-  } */
-
   #basic-navbar-nav {
     background: #1F2933;
   }
@@ -321,36 +323,56 @@ header {
     display: none;
   }
 
+  .footer-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-media-icon {
+    width: 20px;
+    height: 20px;
+  }
+
   .about-me {
-    flex-direction: column;
+    flex-direction: column !important;
     margin: 50px 0 0 0;
   }
 
   #about-photo {
-    margin-inline-end: 0;
+    margin: 0 auto;
   }
 
-  .stack2 {
-    width: 100%;
+  .tech-stack1 {
+    margin-block-start: 4em;
   }
 
-  .projects {
-    justify-content: center;
+  .sq-stack {
+    width: 125px;
+    height: 125px;
   }
 
-  .card {
-    width: 100%;
+  .sq-stack2 {
+    width: 75px;
+    height: 75px;
   }
 
-  .card-btn {
-    width: 100%;
+  .sq-stack-icon {
+    width: 55px;
+    height: 55px;
   }
 
-  .form {
-    width: 100%;
+  .sq-stack2-icon {
+    width: 40px;
+    height: 40px;
   }
 
-  .field {
-    width: 100%;
+  .tech-stack-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .project-stack {
+    display: flex;
+    flex-direction: column !important;
   }
 }
