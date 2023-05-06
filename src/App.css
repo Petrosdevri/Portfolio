@@ -146,7 +146,6 @@ header {
 /* Home */
 .hero, .introduction {
   display: flex;
-  justify-content: space-between;
   align-items: left;
   margin: 100px 70px;
   text-align: left;
@@ -163,11 +162,6 @@ header {
 
 .presentation-btn > a {
   text-decoration: none;
-}
-
-#intro-img {
-  width: 300px;
-  height: 250px;
 }
 
 /* About */
@@ -309,18 +303,22 @@ header {
     animation: none;
   }
 
-  header {
+  /* h1, h2, h3, h4, h5, h6 {
+    font-size: 90% !important;
+  } */
+
+  #basic-navbar-nav {
     background: #1F2933;
   }
 
   .hero, .introduction {
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 50px 0 0 0;
   }
 
-  #intro-img {
-    width: 275px;
-    height: 220px;
+  .hero > img, .introduction > img {
+    display: none;
   }
 
   .about-me {
