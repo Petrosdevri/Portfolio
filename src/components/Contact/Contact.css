@@ -1,0 +1,25 @@
+.contact {
+  height: 80vh;
+  margin: 50px 0 50px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.field {
+  background: none;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  color: #FFF;
+  width: 300px;
+}
+
+.error-message {
+  color: #FF0000;
+  margin-block-start: -10px;
+}

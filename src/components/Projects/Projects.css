@@ -1,0 +1,36 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0 50px 0;
+}
+
+.project-card {
+  background: #9AA5B1 !important;
+  width: 15em !important;
+  height: 22em !important;
+}
+
+.card-btn {
+  width: 100px;
+  height: 30px;
+  background: #616E7C !important;
+  border: none !important;
+  border-radius: 2px;
+}
+
+.card-btn:hover {
+  background: #555 !important;
+}
+
+.card-btn > a {
+  color: #FFF !important;
+  margin-block-end: 5px !important;
+  text-decoration: none;
+}
+
+.card-icon {
+  margin-block-end: 8px;
+}

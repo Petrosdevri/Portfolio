@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './Home.css';
 import Hero from './Hero';
 import Introduction from './Introduction';
 import Experience from './Experience';

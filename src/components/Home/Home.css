@@ -1,0 +1,19 @@
+.hero, .introduction {
+  display: flex;
+  align-items: left;
+  margin: 100px 70px;
+  text-align: left;
+}
+
+.introduction {
+  margin-block-start: 250px;
+}
+
+.presentation-btn {
+  width: 120px;
+  height: 40px;
+}
+
+.presentation-btn > a {
+  text-decoration: none;
+}
