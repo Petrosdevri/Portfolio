@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 import ProjectCard from './ProjectCard';
 import { Stack } from 'react-bootstrap';
 import ChadCoin from '../../images/photos/project-pictures/chadcoin.png';

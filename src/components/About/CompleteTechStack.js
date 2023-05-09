@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import './About.css';
 import { Stack } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload';
 import { Sibabel as Babel, Sibootstrap as Bootstrap, Sibrave as Brave, Sicanva as Canva, Sichocolatey as Chocolatey, SicssThree as CSS, Sielectron as Electron, Sieslint as ESLint, Siexpress as Express, Sifigma as Figma, Sigatsby as Gatsby, 
