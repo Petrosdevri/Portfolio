@@ -32,7 +32,7 @@ export default function Experience() {
     };
 
     return (
-        <Stack className='experience stack-text-margin' style={{ marginBlockEnd: '3rem' }}>
+        <Stack className='experience stack-text-margin' style={{ marginBlockEnd: '5em' }}>
                 <h3>Experience</h3>
                 <Chrono items={items} mode='VERTICAL_ALTERNATING' hideControls fontSizes={fontSizes} theme={theme} />
         </Stack>

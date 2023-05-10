@@ -1,12 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4em;
+}
+
 .hero, .introduction {
   display: flex;
   align-items: left;
   margin: 100px 70px;
   text-align: left;
-}
-
-.introduction {
-  margin-block-start: 250px;
 }
 
 .presentation-btn {
