@@ -1,5 +1,5 @@
 .sq-stack:first-child:hover {
-    background: linear-gradient(100deg, #E34F26, #C43C1F, #A52A19, #71240F);
+    background: linear-gradient(90deg, #E34F26, #C43C1F, #A52A19, #71240F);
 }
 
 .sq-stack:nth-child(2):hover {
