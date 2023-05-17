@@ -112,6 +112,18 @@ header {
   color: #0DCAF0 !important;
 }
 
+/* Scroll Button */
+.scroll-btn {
+  width: 55px;
+  height: 55px;
+  background: #1A252C !important;
+  border: 1px solid #1A252C !important;
+  bottom: 2em;
+  position: fixed;
+  right: 2em;
+  z-index: 2;
+}
+
 /* Footer Styles */
 .footer {
   background: #1F2933;
