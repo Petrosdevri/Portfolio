@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
                     {props.description}
                 </Card.Text>
                 <Stack direction='horizontal' gap={3}>
-                    <Button className='card-btn'><a href={props.code} target='_blank' rel='noreferrer'><Github class='card-icon' size={20} title='' /> Code</a></Button>
+                    <Button className='card-btn'><a href={props.code} target='_blank' rel='noreferrer'><Github className='card-icon' size={20} title='' /> Code</a></Button>
                     <Button className='card-btn'><a href={props.demo} target='_blank' rel='noreferrer'>Demo</a></Button>
                 </Stack>
             </Card.Body>
