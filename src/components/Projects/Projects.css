@@ -1,10 +1,11 @@
 .projects {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  margin: 50px 0 50px 0;
+  margin: 5% 25%;
 }
 
 .project-card {
