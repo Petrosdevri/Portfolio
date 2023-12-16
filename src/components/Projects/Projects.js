@@ -3,6 +3,7 @@ import './Projects.css';
 import ProjectCard from './ProjectCard';
 import { Stack } from 'react-bootstrap';
 import AcropolisElects from '../../images/photos/project-pictures/AcropolisElects.png';
+import ArchitectPage from '../../images/photos/project-pictures/Architect Page.png';
 import ChadCoin from '../../images/photos/project-pictures/ChadCoin.png';
 import FrontendMentorChallenges from '../../images/photos/project-pictures/Frontend Mentor Challenges.png';
 import GreekValues from '../../images/photos/project-pictures/GreekValues.png';
@@ -16,7 +17,7 @@ export default function Projects() {
         <Stack className='projects'>
             <Stack className='project-stack' direction='horizontal' gap={5}>
                 <ProjectCard title='AcropolisElects' description='A web application that simulates the distribution of seats in the Greek Parliament based on different electoral systems.' picture={AcropolisElects} code='https://github.com/Petrosdevri/AcropolisElects' demo='https://acropolis-elects.vercel.app/' />
-                <ProjectCard title='Architect Page' description='A sample page built with Bootstrap, React and W3.CSS.' picture='' code='https://github.com/Petrosdevri/Architect-Page' demo='https://architect-page-w3css.netlify.app/' />
+                <ProjectCard title='Architect Page' description='A sample page built with Bootstrap, React and W3.CSS.' picture={ArchitectPage} code='https://github.com/Petrosdevri/Architect-Page' demo='https://architect-page-w3css.netlify.app/' />
                 <ProjectCard title='ChadCoin' description='A Solidity ERC20 Meme Coin with a JavaScript frontend DApp. Was done for Cadena Web3 course.' picture={ChadCoin} code='https://github.com/Petrosdevri/ChadCoin' demo='https://github.com/Petrosdevri/ChadCoin#readme' />
             </Stack>
             <Stack className='project-stack' direction='horizontal' gap={5}>
