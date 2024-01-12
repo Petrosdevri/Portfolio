@@ -30,7 +30,7 @@ export default function Footer() {
                 <Stack direction='horizontal' id='social-media-icons'>
                     <button className='footer-btn' style={{ background: `${bgColor[0]}` }} onMouseOver={() => onMouseOver(1)} onMouseOut={onMouseOut}>
                         <a href='https://github.com/Petrosdevri' target='_blank' rel='noreferrer'>
-                            <LazyLoad height={35} once><UilGithub className='social-media-icon' color={color[1]} size='35' /></LazyLoad>
+                            <LazyLoad height={35} once><UilGithub className='social-media-icon' color={color[0]} size='35' /></LazyLoad>
                         </a>
                     </button>
                     <button className='footer-btn' style={{ background: `${bgColor[1]}` }} onMouseOver={() => onMouseOver(2)} onMouseOut={onMouseOut}>
