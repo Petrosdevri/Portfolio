@@ -1,22 +1,23 @@
 .contact {
-  height: 80vh;
-  margin: 50px 0 50px 0;
-}
-
-.form {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 2em;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .field {
   background: none;
-  border: 2px solid #FFF;
+  border: 2px solid #FFFFFF;
   border-radius: 5px;
-  color: #FFF;
-  width: 300px;
+  color: #FFFFFF;
+  padding: 0.3em;
 }
 
 .error-message {
