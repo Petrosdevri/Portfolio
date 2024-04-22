@@ -12,9 +12,9 @@ export default function ProjectCard(props) {
                 <Card.Text className='project-description'>
                     {props.description}
                 </Card.Text>
-                <Stack direction='horizontal' gap={3}>
+                <Stack className='justify-content-center' direction='horizontal' gap={3}>
                     <Button className='card-btn'><a href={props.code} target='_blank' rel='noreferrer'><Github className='card-icon' size={20} title='' /> Code</a></Button>
-                    <Button className='card-btn'><a href={props.demo} target='_blank' rel='noreferrer'>Demo</a></Button>
+                    { props.demo ? <Button className='card-btn'><a href={props.demo} target='_blank' rel='noreferrer'>Demo</a></Button> : '' }
                 </Stack>
             </Card.Body>
         </Card>
