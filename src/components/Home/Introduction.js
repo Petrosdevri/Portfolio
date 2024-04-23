@@ -12,11 +12,11 @@ export default function Introduction() {
 
     return (
         <Stack className='introduction' direction='horizontal'>
-                <Stack className='short-intro' gap={2}>
-                    <h3>Short <span className='name'>Introduction</span></h3>
-                    <p>I am a Front End Developer from Greece, currently working as a freelancer.<br /> I have a passion for web development and I am always looking for new challenges. <br /> I am currently working on a few open source projects, which you can find on my GitHub profile.</p>
-                </Stack>
-                <img src={Avatar} alt='Avatar' id='avatar' width='200' height='250' />
-            </Stack>
+            <Stack className='short-intro' gap={2}>
+                <h3>Short <span className='name'>Introduction</span></h3>
+                <p>I am a Front End Developer and IES student from Greece, working as a freelancer.<br /> I have a passion for web development and I am always looking for new challenges. <br /> Most of my works are on open source projects, which can be found on my GitHub profile.</p>
+            </Stack>                
+            <img src={Avatar} alt='Avatar' id='avatar' width='200' height='250' />
+        </Stack>
     );
 }
