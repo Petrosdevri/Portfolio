@@ -3,6 +3,12 @@
 @import 'https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap';
 
 /* General Styles */
+:root {
+  --darkgrey-to-black: rgba(255,255,255,.1);
+  --dark-blue: #1F2933;
+  --dark-blue2: #1A252C;
+}
+
 * {
   animation: fadeIn 0.7s ease-in-out;
 }
@@ -16,8 +22,8 @@
   background-image:
     radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
     radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    radial-gradient(white,  2px, var(--darkgrey-to-black) transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), var(--darkgrey-to-black) 2px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   color: #FFF;
@@ -90,7 +96,7 @@ img {
 
 /* Header Styles */
 header {
-  background: #1F2933;
+  background: var(--dark-blue);
   height: 4.39em;
   box-shadow: 0.31em 0 0.62em rgba(0, 0, 0, .5);
   position: sticky;
@@ -116,8 +122,8 @@ header {
 .scroll-btn {
   width: 55px;
   height: 55px;
-  background: #1A252C !important;
-  border: 1px solid #1A252C !important;
+  background: var(--dark-blue2) !important;
+  border: 1px solid var(--dark-blue2) !important;
   bottom: 2em;
   position: fixed;
   right: 2em;
@@ -126,7 +132,7 @@ header {
 
 /* Footer Styles */
 .footer {
-  background: #1F2933;
+  background: var(--dark-blue);
   height: 325px;
   display: flex;
   flex-direction: column;
@@ -162,7 +168,7 @@ header {
   }
 
   #basic-navbar-nav {
-    background: #1F2933;
+    background: var(--dark-blue);
   }
 
   #nav {
