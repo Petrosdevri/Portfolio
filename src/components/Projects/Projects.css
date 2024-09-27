@@ -5,7 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   gap: 50px;
-  margin: 5% 25%;
+  padding: 2em;
 }
 
 .project-card {
